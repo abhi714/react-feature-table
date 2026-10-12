@@ -13,7 +13,7 @@
     "lucide-react": "^1.55.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "react-feature-table": "file:../react-feature-table-0.1.0.tgz"
+    "react-feature-table": "^0.1.0"
   },
   "devDependencies": {
     "@types/node": "^24.13.3",
