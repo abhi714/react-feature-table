@@ -1,0 +1,112 @@
+[
+  {
+    "sku": "PROD-901",
+    "name": "Quantum Neural Processor X1",
+    "category": "Hardware",
+    "stock": 142,
+    "price": 899.99,
+    "rating": 4.9,
+    "status": "In Stock",
+    "supplier": "OmniCore Semi",
+    "updatedAt": "2024-03-01"
+  },
+  {
+    "sku": "PROD-902",
+    "name": "Holographic Display Matrix 8K",
+    "category": "Peripherals",
+    "stock": 28,
+    "price": 1499.50,
+    "rating": 4.7,
+    "status": "Low Stock",
+    "supplier": "Aura Optics",
+    "updatedAt": "2024-03-03"
+  },
+  {
+    "sku": "PROD-903",
+    "name": "Superconducting Power Cell 500W",
+    "category": "Components",
+    "stock": 0,
+    "price": 349.00,
+    "rating": 4.4,
+    "status": "Out of Stock",
+    "supplier": "VoltDyn",
+    "updatedAt": "2024-02-28"
+  },
+  {
+    "sku": "PROD-904",
+    "name": "Fiber-Mesh Cybernetic Glove",
+    "category": "Wearables",
+    "stock": 75,
+    "price": 279.99,
+    "rating": 4.8,
+    "status": "In Stock",
+    "supplier": "HapticEdge",
+    "updatedAt": "2024-03-05"
+  },
+  {
+    "sku": "PROD-905",
+    "name": "Zero-Latency Optical Transceiver",
+    "category": "Networking",
+    "stock": 210,
+    "price": 129.00,
+    "rating": 4.6,
+    "status": "In Stock",
+    "supplier": "PhotonWave",
+    "updatedAt": "2024-03-02"
+  },
+  {
+    "sku": "PROD-906",
+    "name": "Cryo-Cooling Module V4",
+    "category": "Thermal",
+    "stock": 14,
+    "price": 420.00,
+    "rating": 4.5,
+    "status": "Low Stock",
+    "supplier": "CryoTech Corp",
+    "updatedAt": "2024-03-04"
+  },
+  {
+    "sku": "PROD-907",
+    "name": "Titanium Exoskeleton Joint",
+    "category": "Robotics",
+    "stock": 55,
+    "price": 680.00,
+    "rating": 4.95,
+    "status": "In Stock",
+    "supplier": "Apex Mech",
+    "updatedAt": "2024-02-20"
+  },
+  {
+    "sku": "PROD-908",
+    "name": "Biometric Encryption Dongle",
+    "category": "Security",
+    "stock": 350,
+    "price": 89.95,
+    "rating": 4.3,
+    "status": "In Stock",
+    "supplier": "CipherShield",
+    "updatedAt": "2024-03-06"
+  },
+  {
+    "sku": "PROD-909",
+    "name": "Atmospheric Ionizer Desktop",
+    "category": "Environment",
+    "stock": 0,
+    "price": 199.99,
+    "rating": 4.1,
+    "status": "Out of Stock",
+    "supplier": "PureAir Labs",
+    "updatedAt": "2024-02-15"
+  },
+  {
+    "sku": "PROD-910",
+    "name": "Sub-THz Wave Radar Sensor",
+    "category": "Sensors",
+    "stock": 88,
+    "price": 540.00,
+    "rating": 4.75,
+    "status": "In Stock",
+    "supplier": "OmniCore Semi",
+    "updatedAt": "2024-03-07"
+  }
+]

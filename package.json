@@ -1,0 +1,53 @@
+{
+  "name": "react-feature-table",
+  "version": "0.1.0",
+  "description": "A lightweight, flexible, and fully configurable React data table with toggleable sorting, search, and pagination.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./styles.css": "./dist/index.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup && tsc",
+    "dev": "tsup --watch",
+    "demo": "npm --prefix demo-app run dev",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "table",
+    "datatable",
+    "sorting",
+    "pagination",
+    "search",
+    "configurable",
+    "typescript"
+  ],
+  "author": "Abhishek Bhatt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhi714/react-feature-table.git"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
