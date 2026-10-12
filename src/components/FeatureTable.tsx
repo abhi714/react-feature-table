@@ -1,6 +1,8 @@
 import React from 'react';
 import { FeatureTableProps, PaginationOptions } from '../types';
 import { useFeatureTable } from '../hooks/useFeatureTable';
+import { TableSearch } from './TableSearch';
+import { TablePagination } from './TablePagination';
 
 export function FeatureTable<T extends Record<string, any>>({
     data,
@@ -50,15 +52,10 @@ export function FeatureTable<T extends Record<string, any>>({
     return (
         <div className={`rft-container ${className}`} style={style}>
             {searchable && (
-                <div className="rft-toolbar">
-                    <input
-                        type="text"
-                        className="rft-search-input"
-                        placeholder="Search..."
-                        value={searchTerm}
-                        onChange={(e) => setSearchTerm(e.target.value)}
-                    />
-                </div>
+                <TableSearch
+                    value={searchTerm}
+                    onChange={setSearchTerm}
+                />
             )}
 
             <div className="rft-table-wrapper">
@@ -120,34 +117,14 @@ export function FeatureTable<T extends Record<string, any>>({
             </div>
 
             {isPaginationEnabled && (
-                <div className="rft-pagination">
-                    <div>
-                        {paginationOpts.showTotal !== false && (
-                            <span>
-                                Showing {displayData.length} of {totalItems} entries
-                            </span>
-                        )}
-                    </div>
-                    <div>
-                        <button
-                            className="rft-pagination-btn"
-                            disabled={currentPage <= 1}
-                            onClick={() => setCurrentPage(currentPage - 1)}
-                        >
-                            Previous
-                        </button>
-                        <span>
-                            {' '}Page {currentPage} of {totalPages}{' '}
-                        </span>
-                        <button
-                            className="rft-pagination-btn"
-                            disabled={currentPage >= totalPages}
-                            onClick={() => setCurrentPage(currentPage + 1)}
-                        >
-                            Next
-                        </button>
-                    </div>
-                </div>
+                <TablePagination
+                    currentPage={currentPage}
+                    totalPages={totalPages}
+                    totalItems={totalItems}
+                    displayCount={displayData.length}
+                    showTotal={paginationOpts.showTotal !== false}
+                    onPageChange={setCurrentPage}
+                />
             )}
         </div>
     );
